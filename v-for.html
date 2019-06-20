@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>V-for 实例</title>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+<div id="id">
+    <ol>
+        <li v-for="item in items">
+            <sapn v-text="item"></sapn>
+        </li>
+    </ol>
+</div>
+<script type="text/javascript">
+    var vue = new Vue({
+        el:"#id",
+        data:{
+            items:[2,5,1,4,9]
+        }
+    })
+</script>
+</body>
+</html>
